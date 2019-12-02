@@ -15,7 +15,7 @@ res = requests.get(url).content
 electoral = pd.read_csv(io.StringIO(res.decode('utf-8')), header = None, names = ["state", "elec_votes"])
 
 # Get polling data
-polls = pd.read_csv("../datasets/president_polls.csv")
+polls = pd.read_csv("datasets/president_polls.csv")
 
 # Create Pollster Ratings DataFrame from 538
 url = "https://raw.githubusercontent.com/fivethirtyeight/data/master/pollster-ratings/pollster-ratings.csv"
@@ -23,7 +23,7 @@ res = requests.get(url).content
 pollster_rating = pd.read_csv(io.StringIO(res.decode('utf-8')))
 
 # Get historic voting trends for each state
-votes_by_year = pd.read_csv("../datasets/historic_voting.csv", index_col = "Unnamed: 0")
+votes_by_year = pd.read_csv("datasets/historic_voting.csv", index_col = "Unnamed: 0")
 
 # Create a DataFrame denoting a win or loss in the state
 url = "https://raw.githubusercontent.com/chris-taylor/USElection/master/data/electoral-college-votes.csv"
@@ -31,7 +31,7 @@ res = requests.get(url).content
 electoral = pd.read_csv(io.StringIO(res.decode('utf-8')), header = None, names = ["state", "elec_votes"])
 
 # Get Google Trends prediction data, weighted for recency
-weighted_preds = pd.read_csv("../datasets/weighted_preds.csv")
+weighted_preds = pd.read_csv("datasets/weighted_preds.csv")
 
 
 def weight_polls(polls):
@@ -404,7 +404,7 @@ def mult_sim_election(polls, pollster_rating, electoral, weighted_preds, cand_x,
     tot_df["perc_y"] = tot_df["wins_y"] / 1000
 
     # State abbreviations retrieved from: http://worldpopulationreview.com/states/state-abbreviations/
-    shorts = pd.read_csv("../datasets/state_shorts.csv")
+    shorts = pd.read_csv("datasets/state_shorts.csv")
     tot_df = pd.merge(tot_df, shorts, left_on = "state", right_on = "State")
     
     

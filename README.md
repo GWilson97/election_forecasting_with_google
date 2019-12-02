@@ -15,6 +15,7 @@ Polling data was collected from [FiveThirtyEight](https://projects.fivethirtyeig
 Statewide voting trends were particularly helpful in training the Google Trends Classification model. Historic voting trends were used to identify states that:
 - haven't deviated in the laste several rounds of Presidential Elections
 - frequently vote together
+
 The model will improve as more polling data is collected over the course of the Democratic Primaries and General Presidential Election. This data was collected from [Ballotpedia](https://ballotpedia.org/Presidential_election_accuracy_data) and the [Harvard Database](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/42MVDX).
 
 Google Trends allows users to select up to five search terms for analysis and returns the proportion or popularity of each term in relation to the others. The selected terms were influenced by the top search terms by county found in the following Google Trends Stories on the [Democratic Primaries](https://trends.google.com/trends/story/US_cu_o_FMW2oBAACFKM_en) and [Republican Primaries](https://trends.google.com/trends/story/US_cu_jDnKdWsBAAAtzM_en).
