@@ -31,7 +31,7 @@ res = requests.get(url).content
 electoral = pd.read_csv(io.StringIO(res.decode('utf-8')), header = None, names = ["state", "elec_votes"])
 
 # Get Google Trends prediction data, weighted for recency
-weighted_preds = pd.read_csv("datasets/weighted_preds.csv")
+weighted_preds = pd.read_csv("datasets/current_weighted_preds.csv")
 
 
 def weight_polls(polls):
@@ -193,6 +193,9 @@ def state_sim(state_df, weighted_preds, cand_x_party, cand_y_party, state, n = 1
     -----------
     state_df : pandas dataframe, polls from FiveThirtyEight
     weighted_preds : pandas dataframe, predictions from Google Trends of state leaning
+    cand_x_party : str, party of candidate X, either "dem" or "rep"
+    cand_y_party : str, party of candidate Y, either "dem" or "rep"
+    state : str, the state for which the simulation is being run
     n : int, number of Monte Carlo simulations run
     """
     c_x = sum(state_df[f"votes_{cand_x_party}"])
@@ -248,8 +251,10 @@ def election_sim(polls, pollster_rating, electoral, weighted_preds, cand_x, cand
     -----------
     polls : pandas dataframe, Polling data from FiveThirtyEight
     pollster_rating : pandas dataframe, pollster organization weights
-    candidate_x : str, Name of candidate
-    candidate_y : str, Name of candidate
+    electoral : pandas dataframe, states and their associated electoral votes
+    weighted_preds : pandas dataframe, predictions from Google Trends of state leaning
+    cand_x : str, Name of candidate
+    cand_y : str, Name of candidate
     cand_x_party : str, Party of candidate
     cand_y_party : str, Party of candidate
     """
@@ -350,6 +355,8 @@ def mult_sim_election(polls, pollster_rating, electoral, weighted_preds, cand_x,
     -----------
     polls : pandas dataframe, Polling data from FiveThirtyEight
     pollster_rating : pandas dataframe, pollster organization weights
+    electoral : pandas dataframe, states and their associated electoral votes
+    weighted_preds : pandas dataframe, predictions from Google Trends of state leaning
     cand_x : str, Name of candidate
     cand_y : str, Name of candidate
     cand_x_party : str, Party of candidate
@@ -450,4 +457,3 @@ def mult_sim_election(polls, pollster_rating, electoral, weighted_preds, cand_x,
     fig.write_html(f"plots/{cand_x}_{cand_y}_sim.html")
     
     return tot_df
-
