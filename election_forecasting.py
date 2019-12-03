@@ -446,6 +446,8 @@ def mult_sim_election(polls, pollster_rating, electoral, weighted_preds, cand_x,
 
     fig.show()
     
+    # Export plot
+    fig.write_html(f"plots/{cand_x}_{cand_y}_sim.html")
     
     return tot_df
 
