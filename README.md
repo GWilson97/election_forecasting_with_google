@@ -14,10 +14,10 @@ Additionally, polling data is weighted by recency and its [FiveThirtyEight Polls
 1. EDA
 2. Analysis of Past Voting Data
 3. Collection of Google Trends Data
-  - Gather 2016 data
-  - Build 2016 model to identify best hyperparameters
-  - Gather data for the past year
-  - Train a model with the best hyperparameters
+   - Gather 2016 data
+   - Build 2016 model to identify best hyperparameters
+   - Gather data for the past year
+   - Train a model with the best hyperparameters
 4. Weighting Polls by Recency and Pollster Rating
 5. Visuzalizing Election Results
 6. Election Forecasting
