@@ -74,6 +74,8 @@ There are states that have not voted consistently in the past seven election cyc
 
 The model will continue to improve as more polls are released and focus on the relationship between the eventual Democratic nominee and the President.
 
+![alt text](./plots/Donald_Trump_Elizabeth_Warren_sim.html "test")
+
 ### Data Sources
 
 Pollster Rankings:
