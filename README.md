@@ -1,6 +1,4 @@
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src ="./plots/Donald_Trump_Elizabeth_Warren_sim.html" height="525" width="100%">
-    </iframe>
-
+https://gwilson97.github.io/election_forecasting_with_google/
 
 # Election Forecasting with Google Trends
 
