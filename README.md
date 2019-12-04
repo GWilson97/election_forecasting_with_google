@@ -7,7 +7,6 @@ The idea for this project came from a book I read called [Everybody Lies by Seth
 The weakness of Google Search Trend data is that it does not inherently indicate the political leanings of the user, with the exception of some heavily polarizing and infrequently used language. The theory, which I have borrowed from my favorite television show The West Wing (Season 7, Episode 2 to be precise), is that typical Democratic and Republican candidates will focus their platforms on different issues than their opponent.
 
 <strong>Google Trends Proportions</strong>
-
 ![alt text](./images/google_trends_prop.png "Google Trends Proportions")
 
 I used this theory to compare relative search term frequency with Google Trends for each state and build a classification model trained on Google Trends data and tested on past voting behavior. Basically, how do X-party states search political topics vs. how do Y-party states search political topics.
@@ -17,7 +16,6 @@ Additionally, polling data is weighted by recency and its [FiveThirtyEight Polls
 As I originally intended Google Trends results to be a correction and not a significant predictor, I examined the average polling accuracy as posted by FiveThirtyEight and settled on a 5% "correction" term for Google Trends with the polls still retaining 95% of the weight.
 
 <strong>FiveThirtyEight Poll Accuracy</strong>
-
 ![alt text](./images/fivethirtyeight_acc.png "FiveThirtyEight Poll Accuracy")
 
 ### Workflow
@@ -38,7 +36,6 @@ The model trained on 2016 Google Trends data alone had an 89% training score and
 The best parameters for this model were utilized to build the model that would examine current trends. Probabilities of going for the Republican/Democratic candidate are returned and added to the simulation for the candidate.
 
 <strong>Election Forecast Output</strong>
-
 ![alt text](./images/election_map.png "Election Forecast Output")
 
 ### Data Overview
@@ -76,8 +73,6 @@ In states that have consistently voted for a candidate of one party over the las
 There are states that have not voted consistently in the past seven election cycles, yet still have no polling data. These states typically follow the same trends as "predetermined" states and are considered predetermined until polling data for that state is collected. Again, this is meant to give the most likely scenario for how a state will vote until more information can be collected.
 
 The model will continue to improve as more polls are released and focus on the relationship between the eventual Democratic nominee and the President.
-
-![alt text](./plots/Donald_Trump_Elizabeth_Warren_sim.html "test")
 
 ### Data Sources
 
