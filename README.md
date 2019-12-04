@@ -75,7 +75,9 @@ There are states that have not voted consistently in the past seven election cyc
 The model will continue to improve as more polls are released and focus on the relationship between the eventual Democratic nominee and the President.
 
 <strong>Example Visualization for Trump vs. Warren</strong>
+
 https://gwilson97.github.io/election_forecasting_with_google/
+
 Note: Polling Data for this visualization is from FiveThirtyEight as of 12/4/19
 
 ### Data Sources
