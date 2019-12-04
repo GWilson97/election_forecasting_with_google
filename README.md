@@ -1,3 +1,7 @@
+<iframe src ="./plots/Donald_Trump_Elizabeth_Warren_sim.html">
+    </iframe>
+
+
 # Election Forecasting with Google Trends
 
 ### Introduction
