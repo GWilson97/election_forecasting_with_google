@@ -1,5 +1,3 @@
-https://gwilson97.github.io/election_forecasting_with_google/
-
 # Election Forecasting with Google Trends
 
 ### Introduction
@@ -75,6 +73,8 @@ In states that have consistently voted for a candidate of one party over the las
 There are states that have not voted consistently in the past seven election cycles, yet still have no polling data. These states typically follow the same trends as "predetermined" states and are considered predetermined until polling data for that state is collected. Again, this is meant to give the most likely scenario for how a state will vote until more information can be collected.
 
 The model will continue to improve as more polls are released and focus on the relationship between the eventual Democratic nominee and the President.
+
+https://gwilson97.github.io/election_forecasting_with_google/
 
 ### Data Sources
 
