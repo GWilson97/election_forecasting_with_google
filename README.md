@@ -1,7 +1,3 @@
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src ="./plots/Donald_Trump_Elizabeth_Warren_sim.html" height="525" width="100%">
-    </iframe>
-
-
 # Election Forecasting with Google Trends
 
 ### Introduction
@@ -77,6 +73,12 @@ In states that have consistently voted for a candidate of one party over the las
 There are states that have not voted consistently in the past seven election cycles, yet still have no polling data. These states typically follow the same trends as "predetermined" states and are considered predetermined until polling data for that state is collected. Again, this is meant to give the most likely scenario for how a state will vote until more information can be collected.
 
 The model will continue to improve as more polls are released and focus on the relationship between the eventual Democratic nominee and the President.
+
+<strong>Example Visualization for Trump vs. Warren</strong>
+
+https://gwilson97.github.io/election_forecasting_with_google/
+
+Note: Polling Data for this visualization is from FiveThirtyEight as of 12/4/19
 
 ### Data Sources
 
