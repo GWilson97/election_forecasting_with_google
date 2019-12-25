@@ -15,7 +15,7 @@ res = requests.get(url).content
 electoral = pd.read_csv(io.StringIO(res.decode('utf-8')), header = None, names = ["state", "elec_votes"])
 
 # Get polling data
-polls = pd.read_csv("datasets/president_polls.csv")
+polls = pd.read_csv("https://projects.fivethirtyeight.com/polls-page/president_polls.csv")
 
 # Create Pollster Ratings DataFrame from 538
 url = "https://raw.githubusercontent.com/fivethirtyeight/data/master/pollster-ratings/pollster-ratings.csv"
@@ -345,7 +345,7 @@ def election_sim(polls, pollster_rating, electoral, weighted_preds, cand_x, cand
     return (tot_x, tot_y, df_x[["state", "result"]])
 
 
-def mult_sim_election(polls, pollster_rating, electoral, weighted_preds, cand_x, cand_y, cand_x_party, cand_y_party, n = 1000):
+def mult_sim_election(polls, pollster_rating, electoral, weighted_preds, cand_x, cand_y, cand_x_party, cand_y_party, n = 100):
     """
     Simulate n elections and return a choropleth with the
     state-by-state election results and labels with
@@ -406,9 +406,9 @@ def mult_sim_election(polls, pollster_rating, electoral, weighted_preds, cand_x,
     
     
     # Create columns for candidate Y
-    tot_df["wins_x"] = abs(tot_df["wins_y"] - 1000)
-    tot_df["perc_x"] = tot_df["wins_x"] / 1000
-    tot_df["perc_y"] = tot_df["wins_y"] / 1000
+    tot_df["wins_x"] = abs(tot_df["wins_y"] - 100)
+    tot_df["perc_x"] = tot_df["wins_x"] / 100
+    tot_df["perc_y"] = tot_df["wins_y"] / 100
 
     # State abbreviations retrieved from: http://worldpopulationreview.com/states/state-abbreviations/
     shorts = pd.read_csv("datasets/state_shorts.csv")
