@@ -1,52 +1,52 @@
-geoName,economy,abortion,immigration,climate change,health care
-Alabama,30,28,12,6,24
-Alaska,27,16,18,13,26
-Arizona,24,17,19,8,32
-Arkansas,31,20,13,10,26
-California,27,15,23,11,24
-Colorado,23,17,18,15,27
-Connecticut,22,15,20,12,31
-Delaware,24,17,14,10,35
-District of Columbia,21,14,28,14,23
-Florida,22,18,22,8,30
-Georgia,28,26,17,6,23
-Hawaii,26,16,19,15,24
-Idaho,27,18,15,10,30
-Illinois,23,20,21,9,27
-Indiana,27,21,16,9,27
-Iowa,22,16,15,15,32
-Kansas,23,21,17,10,29
-Kentucky,24,21,13,10,32
-Louisiana,23,23,17,8,29
-Maine,21,19,13,19,28
-Maryland,22,17,21,10,30
-Massachusetts,22,14,21,12,31
-Michigan,23,21,15,9,32
-Minnesota,19,17,17,11,36
-Mississippi,30,23,16,5,26
-Missouri,22,24,12,8,34
-Montana,24,19,16,11,30
-Nebraska,23,22,20,10,25
-Nevada,25,18,22,8,27
-New Hampshire,22,18,14,13,33
-New Jersey,25,18,25,9,23
-New Mexico,22,20,19,11,28
-New York,21,17,24,9,29
-North Carolina,24,20,15,9,32
-North Dakota,44,22,12,2,20
-Ohio,22,25,13,8,32
-Oklahoma,23,22,17,7,31
-Oregon,23,18,18,14,27
-Pennsylvania,25,21,16,9,29
-Rhode Island,23,20,15,15,27
-South Carolina,27,21,15,6,31
-South Dakota,23,21,12,10,34
-Tennessee,26,23,13,7,31
-Texas,26,22,22,6,24
-Utah,24,19,19,12,26
-Vermont,20,12,15,22,31
-Virginia,28,18,19,9,26
-Washington,24,17,20,11,28
-West Virginia,21,22,10,9,38
-Wisconsin,20,16,12,11,41
-Wyoming,28,16,16,9,31
+geoName,economy,abortion,immigration,Race,health care
+Alabama,14,12,6,57,11
+Alaska,12,10,9,49,20
+Arizona,14,10,12,46,18
+Arkansas,13,9,8,56,14
+California,16,10,15,46,13
+Colorado,14,10,12,48,16
+Connecticut,14,9,11,47,19
+Delaware,16,10,6,52,16
+District of Columbia,16,10,22,36,16
+Florida,14,11,14,44,17
+Georgia,16,14,9,48,13
+Hawaii,18,12,11,40,19
+Idaho,14,10,8,53,15
+Illinois,13,11,11,50,15
+Indiana,14,11,7,52,16
+Iowa,15,9,10,49,17
+Kansas,12,13,12,44,19
+Kentucky,10,10,5,60,15
+Louisiana,15,13,7,49,16
+Maine,12,7,9,53,19
+Maryland,12,11,12,47,18
+Massachusetts,13,8,13,46,20
+Michigan,13,14,8,45,20
+Minnesota,14,10,11,44,21
+Mississippi,16,14,6,49,15
+Missouri,12,12,7,50,19
+Montana,9,9,8,57,17
+Nebraska,14,14,8,48,16
+Nevada,12,12,13,49,14
+New Hampshire,12,11,11,46,20
+New Jersey,15,10,16,44,15
+New Mexico,13,10,11,51,15
+New York,13,10,15,42,20
+North Carolina,13,10,8,51,18
+North Dakota,27,16,4,41,12
+Ohio,11,15,7,48,19
+Oklahoma,11,14,10,50,15
+Oregon,16,9,10,49,16
+Pennsylvania,13,11,10,50,16
+Rhode Island,16,10,13,42,19
+South Carolina,15,11,7,53,14
+South Dakota,13,12,4,54,17
+Tennessee,12,11,7,57,13
+Texas,15,13,14,43,15
+Utah,13,9,10,52,16
+Vermont,10,7,9,58,16
+Virginia,15,10,11,51,13
+Washington,13,9,12,49,17
+West Virginia,11,14,5,52,18
+Wisconsin,10,9,7,50,24
+Wyoming,17,11,8,56,8

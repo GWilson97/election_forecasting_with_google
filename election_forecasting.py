@@ -33,7 +33,6 @@ electoral = pd.read_csv(io.StringIO(res.decode('utf-8')), header = None, names =
 # Get Google Trends prediction data, weighted for recency
 weighted_preds = pd.read_csv("datasets/current_weighted_preds.csv")
 
-
 def weight_polls(polls):
     """
     Weight the polls on their recency and pollster rating
@@ -72,7 +71,7 @@ def weight_polls(polls):
     polls["recency_weight"] = 1 / (polls["month_diff"] + 1)
 
     # Create a weighting column for quality of pollster: from FiveThirtyEight
-    polls["pollster_weight"] = 1 / (polls["Predictive Plus-Minus"] + 2.0)
+    polls["pollster_weight"] = 1 / (polls["Predictive    Plus-Minus"] + 2.0)
 
     # Create cumulative weighting column
     polls["poll_weight"] = polls["pollster_weight"] * polls["recency_weight"]
@@ -124,7 +123,7 @@ def get_matchup(df,
     
     # Combine polling data with pollster ratings
     cols = ["Pollster",
-            "Predictive Plus-Minus",
+            "Predictive    Plus-Minus",
             "538 Grade"]
     df = df.merge(pollster_rating[cols],
                          how = "left",
@@ -208,7 +207,7 @@ def state_sim(state_df, weighted_preds, cand_x_party, cand_y_party, state, n = 1
     gt_weight = weighted_preds.loc[weighted_preds["geoName"] == state, cand_x_party].values[0]
 
     for i in range(n):
-        p = (0.95 * (c_x * np.random.normal(1, .20)) / total) + (0.05 * gt_weight)
+        p = (0.95 * (c_x * np.random.normal(1, .50)) / total) + (0.05 * gt_weight)
         if p >= .50:
             win_c_x += 1
         else:
